@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>  
+<p>{{message}}</p> 
+
+<hr>
+        <div ng-controller="IndexController as index">
+                User Name: <input ng-model="index.username">
+                Password: <input ng-model="index.password">
+                
+                <button ng-click="index.authenticate()">Login</button>
+                
+                <br>
+                <br>
+                
+                <span ng-bind="index.thisiswhatyoutyped"></span>
+                
+        </div>
+
+
+
+
+
